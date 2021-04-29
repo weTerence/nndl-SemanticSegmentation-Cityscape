@@ -7,21 +7,23 @@
 
 ## 环境与依赖
 
-python 3.7
-
-pytorch 1.1.1
-
-tensorboardX
-
-tensorborad
-
-Image
-
-tqdm
-
-requests
-
-
+| python 3.7             |
+| ---------------------- |
+| kiwisolver>=1.0.1      |
+| matplotlib>=3.0.2      |
+| numpy>=1.16.0          |
+| Pillow>=6.2.0          |
+| pyparsing>=2.3.1       |
+| python-dateutil>=2.7.5 |
+| pytz>=2018.9           |
+| six>=1.12.0            |
+| pytorch 1.1.1          |
+| tensorboardX           |
+| tensorborad            |
+| cycler>=0.10.0         |
+| Image                  |
+| tqdm                   |
+| requests               |
 
 ## 代码结构：
 
@@ -35,17 +37,39 @@ ENet模型的相关代码和预测结果放在"nndl-SemanticSegmentation-Citysca
 
 #### 1. Train for FCN
 
+```
+python train.py --model fcn32s --backbone vgg16 --dataset pascal_voc --lr 0.0001 --epochs 50
+```
 
+此处train.py文件为"nndl-SemanticSegmentation-Cityscape/FCN/scripts/train.py"
 
 #### 2. Evaluation and test for FCN
 
+```
+python eval.py --model fcn32s --backbone vgg16 --dataset citys
+```
 
+此处train.py文件为"nndl-SemanticSegmentation-Cityscape/FCN/scripts/eval.py"
 
 #### 3. Train for ENet
 
+```
+python main.py -m train --save-dir save/folder/ --name model_name --dataset name --dataset-dir path/root_directory/
+```
 
+此处main.py文件为"nndl-SemanticSegmentation-Cityscape/ENet/main.py"
 
 #### 4. Evaluation and test for ENet
+
+```
+python main.py -m train --resume True --save-dir save/folder/ --name model_name --dataset name --dataset-dir path/root_directory/
+```
+
+```
+python main.py -m test --save-dir save/folder/ --name model_name --dataset name --dataset-dir path/root_directory/
+```
+
+此处main.py文件为"nndl-SemanticSegmentation-Cityscape/ENet/main.py"
 
 
 
@@ -61,7 +85,7 @@ ENet模型的相关代码和预测结果放在"nndl-SemanticSegmentation-Citysca
 code:
 
 - [awesome-semantic-segmentation-pytorch](https://github.com/Tramac/awesome-semantic-segmentation-pytorch)
-- [maskrcnn-benchmark](https://github.com/facebookresearch/maskrcnn-benchmark)
+- [PyTorch-ENet](https://github.com/davidtvs/PyTorch-ENet)
 
 paper:
 
