@@ -15,11 +15,15 @@ tensorboardX
 
 tensorborad
 
+Image
 
+tqdm
 
-代码结构：
+requests
 
-FCN模型的实现、训练、预测基于预测结果放在文件夹
+## 代码结构：
+
+FCN模型的相关代码和预测结果放在"nndl-SemanticSegmentation-Cityscape/[FCN](https://github.com/weTerence/nndl-SemanticSegmentation-Cityscape/tree/master/FCN)/"文件夹下
 
 
 
