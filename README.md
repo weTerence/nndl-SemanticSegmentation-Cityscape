@@ -21,11 +21,31 @@ tqdm
 
 requests
 
+
+
 ## 代码结构：
 
 FCN模型的相关代码和预测结果放在"nndl-SemanticSegmentation-Cityscape/FCN/"文件夹下，**具体怎么运行FCN相关代码请参考"nndl-SemanticSegmentation-Cityscape/FCN/README.md"**
 
 ENet模型的相关代码和预测结果放在"nndl-SemanticSegmentation-Cityscape/ENet/"文件夹下，**具体怎么运行FCN相关代码请参考"nndl-SemanticSegmentation-Cityscape/ENet/README.md"**
+
+
+
+## 代码使用
+
+#### 1. Train for FCN
+
+
+
+#### 2. Evaluation and test for FCN
+
+
+
+#### 3. Train for ENet
+
+
+
+#### 4. Evaluation and test for ENet
 
 
 
