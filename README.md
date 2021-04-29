@@ -5,6 +5,24 @@
 
 
 
+## 环境与依赖
+
+python 3.7
+
+pytorch 1.1.1
+
+tensorboardX
+
+tensorborad
+
+
+
+代码结构：
+
+FCN模型的实现、训练、预测基于预测结果放在文件夹
+
+
+
 ## Usage
 ### Train
 -----------------
