@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=1 python eval.py --model fcn32s --backbone vgg16 --dataset citys
