@@ -62,22 +62,10 @@ python main.py -m train --save-dir save/folder/ --name model_name --dataset name
 #### 4. Evaluation and test for ENet
 
 ```
-python main.py -m train --resume True --save-dir save/folder/ --name model_name --dataset name --dataset-dir path/root_directory/
-```
-
-```
 python main.py -m test --save-dir save/folder/ --name model_name --dataset name --dataset-dir path/root_directory/
 ```
 
 此处main.py文件为"nndl-SemanticSegmentation-Cityscape/ENet/main.py"
-
-
-
-```
-.{SEG_ROOT}
-├── tests
-│   └── test_model.py
-```
 
 
 
